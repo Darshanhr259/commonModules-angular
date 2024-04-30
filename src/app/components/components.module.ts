@@ -18,6 +18,7 @@ import { TabsComponent } from './tabs/tabs.component';
 import { TostersComponent } from './tosters/tosters.component';
 
 
+
 @NgModule({
   declarations: [
     ComponentsComponent,
@@ -32,7 +33,8 @@ import { TostersComponent } from './tosters/tosters.component';
     SidenavComponent,
     TablesComponent,
     TabsComponent,
-    TostersComponent
+    TostersComponent,
+   
   ],
   imports: [
     CommonModule,

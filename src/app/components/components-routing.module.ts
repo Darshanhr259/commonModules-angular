@@ -10,6 +10,7 @@ import { LoadersComponent } from './loaders/loaders.component';
 import { ModelsComponent } from './models/models.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { TablesComponent } from './tables/tables.component';
 
 const routes: Routes = [
   {
@@ -26,7 +27,7 @@ const routes: Routes = [
       { path: 'models', component: ModelsComponent },
       { path: 'pagination', component: PaginationComponent },
       { path: 'side-nav', component: SidenavComponent },
-      { path: 'tables', component: SidenavComponent },
+      { path: 'tables', component: TablesComponent },
       { path: 'tabs', component: SidenavComponent },
       { path: 'tosters', component: SidenavComponent },
 
