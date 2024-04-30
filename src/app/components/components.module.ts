@@ -16,6 +16,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { TablesComponent } from './tables/tables.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TostersComponent } from './tosters/tosters.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
 
 
 @NgModule({
@@ -32,7 +34,7 @@ import { TostersComponent } from './tosters/tosters.component';
     SidenavComponent,
     TablesComponent,
     TabsComponent,
-    TostersComponent
+    TostersComponent,
   ],
   imports: [
     CommonModule,
