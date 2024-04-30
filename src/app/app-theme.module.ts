@@ -28,7 +28,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 @NgModule({
-    declarations: [],
+    declarations: [
+        
+    ],
     exports: [
         MatToolbarModule,
         RouterModule,
