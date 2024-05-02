@@ -61,3 +61,10 @@ body, h1, h2, h3, h4, p, ul, ol, li, table, th, td {
     font-weight: bold;
     color: #009879;
 }
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
