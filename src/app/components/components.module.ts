@@ -16,6 +16,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { TablesComponent } from './tables/tables.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TostersComponent } from './tosters/tosters.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
 import { AppThemeModule } from '../app-theme.module';
 
 
