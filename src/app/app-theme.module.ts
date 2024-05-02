@@ -61,6 +61,11 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
         MatTableModule,
         MatSortModule,
         MatSlideToggleModule,
+        MatFormFieldModule,
+        MatInputModule,
+       
+    
+       
     ]
 })
 export class AppThemeModule { }

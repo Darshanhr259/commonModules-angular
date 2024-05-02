@@ -16,6 +16,10 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { TablesComponent } from './tables/tables.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TostersComponent } from './tosters/tosters.component';
+import { AppThemeModule } from '../app-theme.module';
+
+
+
 
 
 @NgModule({
@@ -32,10 +36,15 @@ import { TostersComponent } from './tosters/tosters.component';
     SidenavComponent,
     TablesComponent,
     TabsComponent,
-    TostersComponent
+    TostersComponent,
+   
+   
+    
+   
   ],
   imports: [
     CommonModule,
+    AppThemeModule,
     ComponentsRoutingModule,
     RouterModule.forChild([{path:'', component:ComponentsComponent }])
   ]
