@@ -9,6 +9,7 @@ import { ButtonsComponent } from './modules/buttons/buttons.component';
 import { FooterComponent } from './modules/footer/footer.component';
 import { InputsComponent } from './modules/inputs/inputs.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { AppThemeModule } from './app-theme.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   imports: [
     BrowserModule,
     AppRoutingModule,
+    
     
   ],
   providers: [

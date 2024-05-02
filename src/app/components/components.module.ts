@@ -17,6 +17,9 @@ import { TablesComponent } from './tables/tables.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { TostersComponent } from './tosters/tosters.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { AppThemeModule } from '../app-theme.module';
+
+
 
 
 
@@ -35,9 +38,14 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     TablesComponent,
     TabsComponent,
     TostersComponent,
+   
+   
+    
+   
   ],
   imports: [
     CommonModule,
+    AppThemeModule,
     ComponentsRoutingModule,
     RouterModule.forChild([{path:'', component:ComponentsComponent }])
   ]

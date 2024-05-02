@@ -10,5 +10,5 @@ import { AppThemeModule } from '../../app-theme.module';
   styleUrl: './inputs.component.scss'
 })
 export class InputsComponent {
-
+ 
 }
