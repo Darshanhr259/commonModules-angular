@@ -32,8 +32,6 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ToastModule } from 'primeng/toast'
 import { TabViewModule } from 'primeng/tabview';
 
-
-
 @NgModule({
     declarations: [
         
@@ -70,13 +68,15 @@ import { TabViewModule } from 'primeng/tabview';
         MatSlideToggleModule,
         MatFormFieldModule,
         MatInputModule,
+        MatSortModule,
+        MatPaginatorModule,
+        MatPaginatorModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatCardModule,
         CarouselModule,
         ToastModule,
         TabViewModule,
-        
-       
-    
-       
     ]
 })
 export class AppThemeModule { }
