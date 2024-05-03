@@ -11,6 +11,8 @@ import { ModelsComponent } from './models/models.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { TablesComponent } from './tables/tables.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { TostersComponent } from './tosters/tosters.component';
 
 const routes: Routes = [
   {
@@ -28,8 +30,8 @@ const routes: Routes = [
       { path: 'pagination', component: PaginationComponent },
       { path: 'side-nav', component: SidenavComponent },
       { path: 'tables', component: TablesComponent },
-      { path: 'tabs', component: SidenavComponent },
-      { path: 'tosters', component: SidenavComponent },
+      { path: 'tabs', component: TabsComponent },
+      { path: 'tosters', component: TostersComponent},
 
     ],
   },
