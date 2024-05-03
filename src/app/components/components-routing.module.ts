@@ -19,7 +19,7 @@ const routes: Routes = [
     path: '',
     component: ComponentsComponent,
     children: [
-  
+      { path: '', redirectTo:'buttons', pathMatch:'full' },
       { path: 'buttons', component: ButtonsComponent },
       { path: 'cards', component: CardsComponent },
       { path: 'carousel', component: CarouselComponent },

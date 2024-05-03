@@ -3,17 +3,21 @@ import { CommonModule } from '@angular/common';
 
 import { FunctionalitiesRoutingModule } from './functionalities-routing.module';
 import { FunctionalitiesComponent } from './functionalities.component';
-import { ImageToBase64Component } from './image-to-base64/image-to-base64.component';
+import { RouterModule } from '@angular/router';
+import { FileUploadComponent } from './file-upload/file-upload.component';
+import { AppThemeModule } from '../app-theme.module';
 
 
 @NgModule({
   declarations: [
     FunctionalitiesComponent,
-    ImageToBase64Component
+    FileUploadComponent,
   ],
   imports: [
     CommonModule,
-    FunctionalitiesRoutingModule
+    FunctionalitiesRoutingModule,
+    AppThemeModule,
+    RouterModule.forChild([{path:'', component: FunctionalitiesComponent}])
   ]
 })
 export class FunctionalitiesModule { }
