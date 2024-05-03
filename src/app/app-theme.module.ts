@@ -27,6 +27,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 @NgModule({
     declarations: [
         
@@ -63,9 +64,13 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
         MatSlideToggleModule,
         MatFormFieldModule,
         MatInputModule,
-       
-    
-       
+        MatSortModule,
+        MatPaginatorModule,
+        MatPaginatorModule,
+        MatTableModule,
+        MatPaginatorModule,
+     
+        MatCardModule,
     ]
 })
 export class AppThemeModule { }
