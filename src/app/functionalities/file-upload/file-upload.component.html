@@ -1,0 +1,22 @@
+<div class="main">
+    <div class="main_body">
+        <form [formGroup]="addImageForm">
+            <div class="image_to_base64">
+                <p>Image to base64</p>
+                <div class="upload_file d-flex flex-row justify-content-center align-items-center p-5 w-50">
+                    <input type="file" id="imageInput" style="display: none" accept="image/*"
+                        (change)="handleImageUpload($event)" formControlName="firstImage">
+                    <div class="icon d-flex flex-column justify-content-center align-items-center gap-2"
+                        (click)="openImageUploadDialog()">
+                        <i class="fa-solid fa-cloud-arrow-up" id="uploadIcon"></i>
+                        <p id="selectedLogoName">Upload File </p>
+                    </div>
+                    <div class="drop_image d-flex flex-row">
+                        <img [src]="addImageForm.controls.firstImage.value" alt="" id="uploadedLogoImage"
+                            [style.width]="imageWidth">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
