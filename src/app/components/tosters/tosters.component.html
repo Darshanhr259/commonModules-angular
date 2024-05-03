@@ -1,1 +1,55 @@
-<p>tosters works!</p>
+<!-- <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="..." class="rounded me-2" alt="...">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</div> -->
+
+<h2>Tosters</h2>
+<div class="card flex justify-content-center align-items-center gap-2">
+    <p-toast></p-toast>
+    <button type="button" pButton pRipple (click)="showSuccess()" label="Success" class="btn btn-success w-25">Success</button>
+    <button type="button" pButton pRipple (click)="showInfo()" label="Info" class="btn btn-info w-25">Info</button>
+    <button type="button" pButton pRipple (click)="showWarn()" label="Warn" class="btn btn-warning w-25">Warn</button>
+    <button type="button" pButton pRipple (click)="showError()" label="Error" class="btn btn-danger w-25">Danger</button>
+</div>
+
+<h2>Position Tosters</h2>
+<div class="card flex justify-content-center  align-items-center gap-2">
+  <p-toast position="top-left" key="tl"></p-toast>
+  <p-toast position="top-center" key="tc"></p-toast>
+  <p-toast position="bottom-center" key="bc"></p-toast>
+  <button type="button" pButton pRipple (click)="showTopLeft()" label="Top Left" class="btn btn-light w-25">Light</button>
+  <button type="button" pButton pRipple (click)="showTopCenter()" label="Top Center" class="btn btn-secondary w-25">Secondary</button>
+  <button type="button" pButton pRipple (click)="showBottomCenter()" label="Bottom Center" class="btn btn-success w-25">Success</button>
+</div>
+
+<h2>Multiple Tosters</h2>
+<div class="card flex justify-content-center align-items-center">
+  <p-toast></p-toast>
+  <button type="button" pButton pRipple (click)="show()" label="Multiple"  class="btn btn-dark w-25">Multiple</button>
+</div>
+
+<h2>Sticky Toster</h2>
+<div class="card flex justify-content-center">
+  <p-toast></p-toast>
+  <div class="flex flex-row">
+      <button type="button" pButton pRipple (click)="shows()" class="btn btn-secondary w-25" label="Show Sticky">Show Sticky</button>
+      <button type="button" pButton pRipple (click)="clear()" class="btn btn-danger w-25" label="Clear">Clear</button>
+  </div>
+</div>
+
+<!-- <h2>Animation Toaster</h2>
+<div class="card flex justify-content-center align-items-center">
+  <p-toast [showTransformOptions]="'translateY(100%)'" [showTransitionOptions]="'1000ms'" [hideTransitionOptions]="'1000ms'" [showTransformOptions]="'translateX(100%)'"></p-toast>
+  <button type="button" pButton pRipple (click)="showing()" class="btn btn-success w-25" label="Show">Confirm</button>
+</div> -->
