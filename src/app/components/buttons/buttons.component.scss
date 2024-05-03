@@ -124,6 +124,7 @@
   }
   .pill-button:hover {
     background-color: #eb9898;
+    color: #f44336;
   }
 
 
@@ -151,18 +152,54 @@
     cursor: pointer;
 }
 .btn-linear-2{
-    background-image: linear-gradient(rgb(223, 150, 150),rgb(186, 186, 189));
+  background-image: linear-gradient(to right, red , yellow);
     border: none;
     color: white;
     padding: 12px 16px;
+    border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
 }
 .btn-linear-3{
-    background-image: linear-gradient(rgb(221, 139, 44),rgb(209, 211, 81));
+  background-image: linear-gradient(to left, rgb(74, 141, 150) , rgb(168, 168, 101));
     border: none;
     color: white;
     padding: 12px 16px;
+    border-radius: 12px;
     font-size: 16px;
     cursor: pointer;
+}
+.btn-linear-4{
+  background-image: linear-gradient(to left, rgb(170, 98, 56) ,rgb(168, 168, 101),rgb(175, 55, 55));
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+//   on hover Linear Gradient Buttons
+.btn-hover-1{
+  border: 1px solid;
+  color: rgb(163, 61, 61);
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-hover-2{
+  border: 1px solid;
+  color: rgb(99, 167, 90);
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn-hover-1:hover{
+  background-image: linear-gradient(rgb(248, 82, 82),rgb(248, 196, 196),rgb(54, 6, 6));
+}
+.btn-hover-2:hover{
+  background-image: linear-gradient( to right,rgb(223, 248, 82),rgb(75, 207, 58),rgb(58, 165, 99));
+  color: black;
 }

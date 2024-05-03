@@ -10,6 +10,8 @@ import { FooterComponent } from './modules/footer/footer.component';
 import { InputsComponent } from './modules/inputs/inputs.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { AppThemeModule } from './app-theme.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,10 @@ import { AppThemeModule } from './app-theme.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+    BrowserAnimationsModule,
+    CarouselModule,
+
+        
     
   ],
   providers: [

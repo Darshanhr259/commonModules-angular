@@ -27,6 +27,13 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ToastModule } from 'primeng/toast'
+import { TabViewModule } from 'primeng/tabview';
+
+
+
 @NgModule({
     declarations: [
         
@@ -63,6 +70,10 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
         MatSlideToggleModule,
         MatFormFieldModule,
         MatInputModule,
+        CarouselModule,
+        ToastModule,
+        TabViewModule,
+        
        
     
        
