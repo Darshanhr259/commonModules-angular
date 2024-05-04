@@ -27,12 +27,6 @@ displayedColumns: string[] = ['position', 'name'];
     this.dataSource.paginator = this.paginator;
   }
 
-  
-
-ngAfterViewInit(): void {
-  this.dataSource.paginator = this.paginator;
-}
-
 }
 
 export interface PeriodicElement {
