@@ -4,6 +4,7 @@ body, h1, h2, h3, h4, p, ul, ol, li, table, th, td {
     padding: 0;
   }
   
+ 
 
   .table-with-header {
     border-collapse: collapse;
@@ -63,6 +64,7 @@ body, h1, h2, h3, h4, p, ul, ol, li, table, th, td {
 }
 table {
   width: 100%;
+  margin: 20px;
 }
 
 th.mat-sort-header-sorted {

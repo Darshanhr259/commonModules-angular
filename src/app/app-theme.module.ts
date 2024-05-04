@@ -33,7 +33,6 @@ import { ToastModule } from 'primeng/toast'
 import { TabViewModule } from 'primeng/tabview';
 import { ImageCropperModule } from 'ngx-image-cropper';
 
-
 @NgModule({
     declarations: [
         
@@ -70,15 +69,16 @@ import { ImageCropperModule } from 'ngx-image-cropper';
         MatSlideToggleModule,
         MatFormFieldModule,
         MatInputModule,
+        MatSortModule,
+        MatPaginatorModule,
+        MatPaginatorModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatCardModule,
         CarouselModule,
         ToastModule,
         TabViewModule,
         ImageCropperModule,
-        
-        
-        
-       
-    
        
     ]
 })
