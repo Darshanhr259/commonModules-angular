@@ -58,32 +58,30 @@
                     maximum 5 images)</span></label>
             <input type="file" accept="image/*" style="display: none" multiple (change)="uploadImagesUpload($event)"
                 formControlName="images" #fileInput>
-            <div class="card_dash p-1 br-5 d-flex flex-row gap-3 align-items-center justify-content-center cursor"
+            <div class="card_dash p-1 br-5 d-flex flex-row gap-3  cursor"
                 (click)="fileInput?.click()">
-                <div class="upload d-flex flex-column align-items-center ">
-                    <!-- <i class="fa-sharp fa-solid fa-square-plus icon_font large-paragraph text-purple-d"
-                        id="uploadIcon2"></i> -->
+                <div class="upload d-flex flex-column gap-3">
+
                         <i class='bx bx-upload' ></i>
                     <p class="mar0 text-grey large-links fw-500 d-flex flex-row text-a-c" id="selectedimagesName">
                         Drop your images here, or Browse
                     </p>
                 </div>
             </div>
-            <div class="drop_image d-flex flex-row gap-3 align-items-center justify-content-center mt-3">
+            <div class="drop_image d-flex flex-row gap-3  mt-3">
                 <ng-container *ngFor="let image of base64Images; let i = index;">
                     <div class="image-container" style="position:relative">
                         <img [src]="image" alt="" class="uploaded-image" [style.width]="imagesListWidth">
-                        
+                        <i class="fa-solid fa-times-circle delete-icon text-danger" (click)="deleteLocalImage(i)" style="position: absolute;
+                        top: -10px;
+                        right: -10px;cursor:pointer"></i>
                     </div>
                 </ng-container>
             </div>
         </div>
           
 
-        
-        
-        
-        </div>
+</div>
 </div>
 
 

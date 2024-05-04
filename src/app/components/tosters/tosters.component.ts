@@ -57,25 +57,10 @@ clear() {
 }
 
 /* Sticky Tosters*/
-visible: boolean = false;
-    showConfirm() {
-        if (!this.visible) {
-            this.messageService.add({ key: 'confirm', sticky: true, severity: 'success', summary: 'Can you send me the report?' });
-            this.visible = true;
-        }
-    }
-     onConfirm() {
-        this.messageService.clear('confirm');
-        this.visible = false;
-    }
-    onReject() {
-        this.messageService.clear('confirm');
-        this.visible = false;
-    }
 
-//     /* Animation*/
-//     showing() {
-//       this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Message Content' });
-//   }
+
+   
+
+
 }
 
