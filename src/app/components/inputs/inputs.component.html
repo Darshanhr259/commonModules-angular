@@ -112,7 +112,7 @@
 </div>
 
   <div class="input4 d-flex flex-column justify-content-center align-items-center mt-4">
-    <h2>Dropdown in inputs</h2>
+    <h2>Normal Dropdown</h2>
     <div class="input4_body d-flex flex-row gap-4">
       <div class="dropdown">
         <label for="dropdownSelect">Choose an option:</label>
@@ -131,9 +131,60 @@
           <a href="#">Something else here</a>
         </div>
       </div>
+      <div class="dropdown">
+        <label for="category"> Category:</label>
+        <select>
+          <option disabled selected>Select Category</option>
+          <optgroup label="Books">
+            <option value="1">Fiction</option>
+            <option value="2">Non-fiction</option>
+          </optgroup>
+          <optgroup label="Movies, Music & Games">
+            <option value="3">Movies</option>
+            <option value="4">Music</option>
+            <option value="5">Games</option>
+          </optgroup>
+          <optgroup label="Electronics & Computers">
+            <option value="6">Computers</option>
+            <option value="7">Smartphones</option>
+            <option value="8">Accessories</option>
+          </optgroup>
+        </select>
+      </div>
     
       </div>
     
 </div>
 
 
+
+<div class="material-select d-flex flex-column justify-content-center align-items-center mt-4">
+  <h2>Dropdown Angular-Material</h2>
+  <div class="input2_body d-flex flex-row gap-4">
+    <div class="material-input d-flex flex-column gap-2">
+      <label for="input1">Select:</label>
+      <mat-form-field>
+        
+        <mat-label>Select options</mat-label>
+        <mat-select multiple [(value)]="selectedOptions">
+          <mat-option *ngFor="let option of options" [value]="option.value">
+            {{ option.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="material-input d-flex flex-column gap-2">
+      <label for="input2">Select:</label>
+    <mat-form-field>
+      <mat-label>Select an option</mat-label>
+      <mat-select>
+        <mat-optgroup *ngFor="let group of optionGroups" [label]="group.name">
+          <mat-option *ngFor="let option of group.options" [value]="option.value">
+            {{ option.viewValue }}
+          </mat-option>
+        </mat-optgroup>
+      </mat-select>
+    </mat-form-field>
+    </div>
+    
