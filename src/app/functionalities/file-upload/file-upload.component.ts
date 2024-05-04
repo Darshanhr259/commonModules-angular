@@ -125,6 +125,11 @@ convertToBase64(file: File): Promise<string> {
 }
 
 
+deleteLocalImage(index:number){
+  this.base64Images.splice(index, 1);
+}
+
+
 
 }
 

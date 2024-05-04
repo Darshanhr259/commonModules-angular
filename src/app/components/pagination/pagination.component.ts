@@ -20,6 +20,8 @@ export class PaginationComponent {
   ngAfterViewInit(): void {
     this.dataSource.paginator = this.paginator;
   }
+
+  
 }
 
 export interface PeriodicElement {
@@ -37,7 +39,22 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 7, name: 'Nitrogen'},
   {position: 8, name: 'Oxygen'},
   {position: 9, name: 'Fluorine'},
-  {position: 10, name: 'Neon'},
+  {position: 10, name: 'Phosphorus'},
+  {position: 11, name: 'Sulfur'},
+  {position: 12, name: 'Chlorine'},
+  {position: 13, name: 'Argon'},
+  {position: 14, name: 'Potassium'},
+  {position: 15, name: 'Neon'},
+  {position: 16, name: 'Neon'},
+  {position: 17, name: 'Neon'},
+  {position: 18, name: 'Neon'},
+  {position: 19, name: 'Neon'},
+  {position: 20, name: 'Neon'},
+  {position: 21, name: 'Neon'},
+  {position: 22, name: 'Neon'},
+  {position: 23, name: 'Neon'},
+  {position: 24, name: 'Neon'},
+  {position: 25, name: 'Neon'},
 ];
 
 
