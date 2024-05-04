@@ -12,6 +12,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { AppThemeModule } from './app-theme.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'primeng/carousel';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { CarouselModule } from 'primeng/carousel';
     AppRoutingModule,
     BrowserAnimationsModule,
     CarouselModule,
+    HttpClientModule,
+    
 
         
     

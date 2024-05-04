@@ -1,5 +1,5 @@
 <div class="main">
-    <div class="main_body">
+    <div class="main_body d-flex flex-column gap-5">
         <form [formGroup]="addImageForm">
             <div class="image_to_base64">
                 <p>Image to base64</p>
@@ -17,6 +17,82 @@
                     </div>
                 </div>
             </div>
-        </form>
-    </div>
+         </form>
+       
+         <!-- Convert An Image to Base64 -->
+         <div class="div d-flex flex-column gap-1">
+            <p class="fw-bold">Convert An Image to Base64</p>
+            <input type="file" class="file-upload" (change)="onFileSelecteds($event)">
+         </div>
+         
+         <!-- Convert An Image to Blob -->
+         <div class="custom-file-upload">
+            <p class="fw-bold">Convert An Image to Blob</p>
+            <label for="fileInput">
+              <span>Upload Image</span>
+              <i class='bx bxs-cloud-upload'></i>
+            </label>
+            <input type="file" id="fileInput" (change)="onFileSelected($event)" accept="image/*">
+          </div>
+        
+          <!--  Image crop -->
+          <!-- <input type="file" (change)="fileChangeEvent($event)" />
+           <image-cropper
+              [imageChangedEvent]="imageChangedEvent"
+              [maintainAspectRatio]="true"
+              [aspectRatio]="4 / 3"
+              format="png"
+              (imageCropped)="imageCropped($event)"
+              (imageLoaded)="imageLoaded($event)"
+              (cropperReady)="cropperReady()"
+              (loadImageFailed)="loadImageFailed()"
+          ></image-cropper>
+           <img [src]="croppedImage" />
+         -->
+
+        
+         <!-- multiple image upload -->
+         <div class="d-flex flex-column col-lg-6 mt-3">
+            <p class="fw-bold">Multiple Images Upload</p>
+            <label for="name" class="large-links text-black fw-600">Store Images<span class="text-grey">(Add
+                    maximum 5 images)</span></label>
+            <input type="file" accept="image/*" style="display: none" multiple (change)="uploadImagesUpload($event)"
+                formControlName="images" #fileInput>
+            <div class="card_dash p-1 br-5 d-flex flex-row gap-3 align-items-center justify-content-center cursor"
+                (click)="fileInput?.click()">
+                <div class="upload d-flex flex-column align-items-center ">
+                    <!-- <i class="fa-sharp fa-solid fa-square-plus icon_font large-paragraph text-purple-d"
+                        id="uploadIcon2"></i> -->
+                        <i class='bx bx-upload' ></i>
+                    <p class="mar0 text-grey large-links fw-500 d-flex flex-row text-a-c" id="selectedimagesName">
+                        Drop your images here, or Browse
+                    </p>
+                </div>
+            </div>
+            <div class="drop_image d-flex flex-row gap-3 align-items-center justify-content-center mt-3">
+                <ng-container *ngFor="let image of base64Images; let i = index;">
+                    <div class="image-container" style="position:relative">
+                        <img [src]="image" alt="" class="uploaded-image" [style.width]="imagesListWidth">
+                        
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+          
+
+        
+        
+        
+        </div>
 </div>
+
+
+
+
+
+
+  
+  
+
+
+

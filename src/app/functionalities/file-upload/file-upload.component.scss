@@ -1,3 +1,4 @@
+// convert an image to base64
 .image_to_base64 p{
     font-size: 18px;
     font-weight: 600;
@@ -14,3 +15,76 @@
     font-size: 16px;
     font-weight: 600;
 }
+
+// convert an image to blob
+.custom-file-upload input[type='file'] {
+    display: none;
+  }
+ .custom-file-upload label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px 35px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+  }
+  .custom-file-upload label:hover {
+    background-color: #bddd2e;
+    color: #000;
+  }
+  .custom-file-upload i {
+        margin-right: 5px;
+        font-size: 28px;} 
+ .custom-file-upload span {
+       margin-right: 10px;
+      font-size: 25px;   } 
+
+  
+
+      .file-upload::-webkit-file-upload-button{
+        background-image:linear-gradient(45deg,rgb(92, 146, 45),rgb(172, 160, 160),rgb(5, 48, 24));
+        color: white;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 50px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+      .file-upload::-webkit-file-upload-button:hover{
+        color: black;
+        font-weight: 500;
+      }
+
+      // multiple image upload
+      .upload i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        border: 3px dotted #000;
+        border-style: dashed;
+        width:50%;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        // background-color: #2fa5db;
+        font-size: 40px;
+      }
+
+
+
+
+
+  
+
+
+      
+
+
+
+
+  
+  
+  
