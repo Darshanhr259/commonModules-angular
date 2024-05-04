@@ -6,14 +6,14 @@ import { MatPaginator } from '@angular/material/paginator';
 
 
 
+
+
 @Component({
   selector: 'app-pagination',
   templateUrl: './pagination.component.html',
   styleUrl: './pagination.component.scss'
 })
 export class PaginationComponent {
- 
- 
 
 // pagination table
 dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
@@ -78,4 +78,3 @@ const ELEMENT_DATA: PeriodicElement[] = [
 {position: 9, name: 'Fluorine'},
 {position: 10, name: 'Neon'},
 ];
- 

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {  OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 
 export interface PeriodicElement  {
   name: string;
@@ -9,6 +10,11 @@ export interface PeriodicElement  {
   weight: number;
   symbol: string;
 }
+export interface UserData {
+  name: string;
+  age: number;
+}
+
 
 const ELEMENT_DATA: PeriodicElement[] = [
   {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
@@ -29,6 +35,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrl: './tables.component.scss'
 })
 export class TablesComponent {
+ 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 }

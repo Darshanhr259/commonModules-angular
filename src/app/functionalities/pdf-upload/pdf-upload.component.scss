@@ -1,0 +1,58 @@
+//  style for choose-file
+
+.customfile::-webkit-file-upload-button{
+    background-image:linear-gradient(45deg,rgba(0, 0, 255, 0.603),rgba(0, 0, 0, 0.296));
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+//image dropzone
+  .drop-zone {
+    border: 2px dashed #aaa;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding: 20px;
+    position: relative; 
+   
+  
+  }
+ 
+  .drop-zone p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .drop-zone  .fa-upload {
+    font-size: 48px; 
+    color: #ccc; 
+    margin-bottom: 10px; 
+  }
+  
+  .drop-zone img {
+    max-width: calc(100% - 40px); 
+    max-height: calc(100% - 40px); 
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+  }
+  
+  .drop-zone .fa-upload {
+    z-index: 2; 
+  }
+  
+
+ 
+  .drop-zone .delete-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: red;
+    font-size: 16px;
+  }

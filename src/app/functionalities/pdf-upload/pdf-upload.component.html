@@ -1,0 +1,42 @@
+
+<div class="row">
+    <div class="col">
+      <p class="fw-bold">File Into base64</p>
+      <input type="file" class="customfile" (change)="onFileSelectedBase64($event)" />
+    </div>
+    <div class="col">
+      <p class="fw-bold">File Into Blob</p>
+      <input type="file" class="customfile" (change)="onFileSelectedBlob($event)"/>
+    </div>
+  </div>
+
+  <div class="row pt-4">
+    <p class="fw-bold">Upload Video or Image Preview</p>
+    <input type="file" class="customfile" (change)="onFileSelected($event)" accept="video/*,image/*">
+    
+    <div *ngIf="previewUrl">
+      <p>Preview:</p>
+      <img *ngIf="isImage" [src]="previewUrl" alt="Preview" />
+      <video *ngIf="isVideo" [src]="previewUrl" controls></video>
+    </div>
+  
+  </div>
+   
+  <div class="main d-flex flex-column pt-5">
+<div class="drag-drop">
+  <p class="fw-bold">Drag and Drop Image</p>
+  <div class="drop-zone d-flex flex-column justify-content-center align-items-center" (dragover)="onDragOver($event)" (drop)="onDrop($event)">
+    <i class="fa fa-upload" *ngIf="!imageUrl"></i>
+    <p *ngIf="!imageUrl">Drag and drop your image here</p>
+    <img *ngIf="imageUrl" [src]="imageUrl" alt="Uploaded Image">
+    <i class="fa fa-times delete-icon" *ngIf="imageUrl" (click)="deleteUploadedImage()"></i>
+ 
+                           
+  </div>
+</div>
+  </div>
+ 
+ 
+ 
+ 
+

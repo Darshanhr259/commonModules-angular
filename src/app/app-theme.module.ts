@@ -23,9 +23,9 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import {  MatTableModule } from '@angular/material/table';
-import {  MatPaginatorModule } from '@angular/material/paginator';
-import {  MatSortModule } from '@angular/material/sort';
+import {  MatTableDataSource, MatTableModule } from '@angular/material/table';
+import {  MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import {  MatSort, MatSortModule } from '@angular/material/sort';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -82,6 +82,9 @@ import { ImageCropperModule } from 'ngx-image-cropper';
         MatInputModule, 
         MatIconModule,
         ImageCropperModule,
+        MatSelectModule,
+       
+ 
     ]
 })
 export class AppThemeModule { }

@@ -6,12 +6,14 @@ import { FunctionalitiesComponent } from './functionalities.component';
 import { RouterModule } from '@angular/router';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { AppThemeModule } from '../app-theme.module';
+import { PdfUploadComponent } from './pdf-upload/pdf-upload.component';
 
 
 @NgModule({
   declarations: [
     FunctionalitiesComponent,
     FileUploadComponent,
+    PdfUploadComponent,
   ],
   imports: [
     CommonModule,

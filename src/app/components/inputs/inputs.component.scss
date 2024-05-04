@@ -25,7 +25,7 @@ font-size: 16px;
 box-sizing: border-box;
 }
 textarea {
-  width: 100%;
+  width: 300px;
   padding: 10px;
   border: none;
   border-radius: 10px;
@@ -81,7 +81,7 @@ display: inline-block;
 background-color:#6c757d; 
 border: none;
 color: #333; 
-padding: 11px 16px; 
+padding: 13px 16px; 
 font-size: 16px;
 cursor: pointer;
 }
@@ -108,4 +108,21 @@ background-color: #f0f0f0;
 .dropdown:hover .dropdown-menu {
 display: block;
 }
+
+select {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+option {
+  padding: 4px;
+}
+
 
