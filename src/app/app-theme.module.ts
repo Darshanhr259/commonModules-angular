@@ -31,6 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ToastModule } from 'primeng/toast'
 import { TabViewModule } from 'primeng/tabview';
+import { ImageCropperModule } from 'ngx-image-cropper';
 
 @NgModule({
     declarations: [
@@ -77,6 +78,8 @@ import { TabViewModule } from 'primeng/tabview';
         CarouselModule,
         ToastModule,
         TabViewModule,
+        ImageCropperModule,
+       
     ]
 })
 export class AppThemeModule { }
