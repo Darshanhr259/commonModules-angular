@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { MessageService } from 'primeng/api';
 
 @Component({
@@ -8,7 +9,9 @@ import { MessageService } from 'primeng/api';
   providers: [MessageService]
 })
 export class TostersComponent {
-  constructor(private messageService: MessageService) {}
+  constructor(private messageService: MessageService,
+    private toastrService: ToastrService
+  ) {}
 
   /*Tooster*/
   showSuccess() {
@@ -56,9 +59,25 @@ clear() {
     this.messageService.clear();
 }
 
-/* Sticky Tosters*/
+/* Ngx Tosters*/
 
 
+
+public showSuccessMsg(): void {
+  this.toastrService.success('Message Success!', 'Title Success!');
+}
+
+public showInform(): void {
+  this.toastrService.info('Message Info!', 'Title Info!');
+}
+
+public showWarning(): void {
+  this.toastrService.warning('Message Warning!', 'Title Warning!');
+}
+
+public showErrors(): void {
+  this.toastrService.error('Message Error!', 'Title Error!');
+}
    
 
 

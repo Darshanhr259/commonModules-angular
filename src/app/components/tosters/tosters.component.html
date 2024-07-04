@@ -39,7 +39,16 @@
   <button type="button" pButton pRipple (click)="show()" label="Multiple"  class="btn btn-dark w-25">Multiple</button>
 </div>
 
-<h2>Sticky Toster</h2>
 
+<div class="container-fluid py-3">
+  <h2>Ngx Tosters</h2>
+
+  <div class="d-grid gap-2 col-4 mx-auto">
+    <button type="button" class="btn btn-sm btn-success" (click)="showSuccessMsg()">Success</button>
+    <button type="button" class="btn btn-sm btn-info" (click)="showInform()">Info</button>
+    <button type="button" class="btn btn-sm btn-warning" (click)="showWarning()">Warning</button>
+    <button type="button" class="btn btn-sm btn-danger" (click)="showErrors()">Error</button>
+  </div>
+</div> 
 
 
