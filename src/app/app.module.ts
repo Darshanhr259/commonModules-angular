@@ -26,9 +26,10 @@ import { ToastrModule } from 'ngx-toastr'; // Import ToastrModule
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule,// Required for toastr animations
     CarouselModule,
     HttpClientModule,
+    // ToastrModule added
     ToastrModule.forRoot({
       timeOut: 1000, // 15 seconds
       closeButton: true,
